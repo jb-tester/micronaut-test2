@@ -11,6 +11,6 @@ import javax.inject.Singleton;
  * *******************************
  */
 @Singleton
-@Requires(property = "myconditions.cond3")
+@Requires(property = "myconditions.cond3", pattern = "condition\\d{1,3}")
 public class CBean2 {
 }
